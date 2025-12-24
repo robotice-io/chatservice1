@@ -1,0 +1,25 @@
+{
+  "name": "chatwidget-saas",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AI-powered chat widget SaaS for e-commerce stores",
+  "scripts": {
+    "dev": "pnpm -r --parallel dev",
+    "dev:api": "pnpm --filter @chatwidget/api dev",
+    "dev:ws": "pnpm --filter @chatwidget/websocket dev",
+    "build": "pnpm -r build",
+    "db:generate": "pnpm --filter @chatwidget/api db:generate",
+    "db:migrate": "pnpm --filter @chatwidget/api db:migrate",
+    "db:studio": "pnpm --filter @chatwidget/api db:studio",
+    "lint": "pnpm -r lint",
+    "test": "pnpm -r test",
+    "docker:up": "docker compose up -d",
+    "docker:down": "docker compose down",
+    "docker:logs": "docker compose logs -f"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "packageManager": "pnpm@9.14.2"
+}
+
